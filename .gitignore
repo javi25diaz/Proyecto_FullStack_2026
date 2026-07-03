@@ -1,0 +1,20 @@
+# Node modules (por si acaso en raíz)
+node_modules/
+
+# Variables de entorno con secretos
+.env
+*.env
+
+# Caché Angular
+frontend/.angular/
+
+# Build output
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
