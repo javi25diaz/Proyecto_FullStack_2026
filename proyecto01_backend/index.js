@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const conectarDB = require('./src/config/db');
 const usuarioRoutes = require('./src/routes/usuarioRoutes');
 const authRoutes = require('./src/routes/authRoutes');
+const productoRoutes = require('./src/routes/productoRoutes');
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(express.json());
 // Rutas
 app.use('/api/usuarios', usuarioRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/productos', productoRoutes);
 
 // Ruta principal
 app.get('/', (req, res) => {
