@@ -68,16 +68,26 @@
 }
 
 .product-icon {
-  font-size: 2rem;
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #f0f4ff, #e8ecff);
-  border-radius: 10px;
+  border-radius: 8px;
   flex-shrink: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #4338ca;
 }
+
+.product-icon[data-cat="Computadoras"] { background: #1d4ed8; }
+.product-icon[data-cat="Monitores"]    { background: #0369a1; }
+.product-icon[data-cat="Periféricos"]  { background: #0f766e; }
+.product-icon[data-cat="Audio"]        { background: #7c3aed; }
+.product-icon[data-cat="Video"]        { background: #b45309; }
+.product-icon[data-cat="General"]      { background: #4b5563; }
 
 .product-info {
   flex: 1;

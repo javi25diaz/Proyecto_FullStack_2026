@@ -12,7 +12,7 @@
 
     <div class="products-list" *ngIf="!cargando && !error">
       <div class="product-row" *ngFor="let p of productos">
-        <div class="product-icon">{{ p.icono }}</div>
+        <div class="product-icon" [attr.data-cat]="p.categoria">{{ p.nombre.charAt(0) }}</div>
         <div class="product-info">
           <div class="product-top">
             <h3 class="product-name">{{ p.nombre }}</h3>
